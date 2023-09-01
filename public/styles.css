@@ -52,7 +52,7 @@ body {
 
 .projects hr,
 .endorsement hr {
-  border-top: 3px solid;
+  border-top: 3px solid #cbbc9c;
   opacity: 1;
   width: 5%;
   margin: auto;
@@ -178,7 +178,7 @@ body {
 }
 
 .home-intro p:nth-child(1) {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
@@ -394,16 +394,31 @@ body {
 } */
 
 .carousel-item {
-  height: 335px;
+  height: 355px;
 }
 
 .carousel-caption {
   color: #7e7a73;
   top: 0;
-  max-height: 275px;
+  max-height: 316px;
   padding-bottom: 0px;
   overflow: hidden;
+  padding-top: 0;
   /* padding-bottom: 0; */
+}
+
+.carousel-caption span {
+  display: inline-block;
+  /* margin-bottom: 30px; */
+}
+
+.carousel-caption > span {
+  margin-bottom: 25px;
+  /* margin-bottom: 30px; */
+}
+
+.carousel-caption i {
+  /* margin-bottom: 35px; */
 }
 
 .carousel-caption strong {
@@ -424,16 +439,17 @@ body {
 
 .endor-name a {
   color: #cbbc9c;
+  margin-left: 10px;
 }
 
 .endor-name .fa-solid {
   font-weight: 600;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   line-height: 1;
 }
 
 .carousel-caption h5 {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .carousel-caption p {
