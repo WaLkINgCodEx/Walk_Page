@@ -293,7 +293,8 @@ body {
 }
 
 .skills-inner .skills-col:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+  transition: 0.6s;
 }
 
 .skills-inner .skills-col:nth-child(2),
@@ -441,6 +442,7 @@ body {
 
 .projects h2 {
   text-align: center;
+  letter-spacing: 1.5px;
 }
 
 .pro-container {
@@ -602,6 +604,10 @@ body {
   text-align: center;
   margin-top: 85px;
   margin-bottom: 85px;
+}
+
+.endorsement > h2 {
+  letter-spacing: 1.5px;
 }
 
 .endor-details {
