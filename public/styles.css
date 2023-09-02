@@ -105,7 +105,7 @@ body {
 
 .header-top i {
   line-height: 1;
-  color: #7e7a73;
+  color: #63605a;
 }
 
 .top-linkedin {
@@ -169,21 +169,23 @@ body {
   margin-bottom: 0;
   font-size: 0.9rem;
   letter-spacing: 1.5px;
+  padding-left: 25px;
 }
 
 .home h1 {
   font-size: 2.5rem;
   margin: auto;
-  padding-left: 40px;
+  padding-left: 25px;
   letter-spacing: 5.5px;
   font-weight: 600;
+  color: #63605a;
 }
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
   .home h1 {
     padding-left: 65px;
   }
-}
+} */
 
 @media (min-width: 530px) {
   .home h1 {
@@ -196,10 +198,18 @@ body {
   padding-right: 25px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 900px) {
+  .home-title h6 {
+    padding-left: 0;
+  }
+
+  .home h1 {
+    padding-left: 0;
+  }
+
   .home-intro {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -750,7 +760,7 @@ body {
 footer {
   position: relative;
   z-index: 1;
-  background-color: #4a4843;
+  background-color: #3b3d3d;
   color: white;
 }
 
