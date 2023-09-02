@@ -109,7 +109,13 @@ body {
 }
 
 .top-linkedin {
-  margin-right: 30px;
+  margin-right: 10px;
+}
+
+@media (min-width: 630px) {
+  .top-linkedin {
+    margin-right: 30px;
+  }
 }
 
 .header-inner-frame {
@@ -123,18 +129,17 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  /* padding-left: 5rem;
-  padding-right: 5rem; */
-  /* background-color: #f8f8f8; */
-  /* background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 475px;
-  /* background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
+  min-height: 550px;
 }
 
 .header-home {
-  margin: 3rem 0 2em;
-  /* width: 60%; */
+  margin: 5em 0 4em;
+}
+
+@media (min-width: 560px) {
+  .header-home {
+    margin: 3rem 0 2em;
+  }
 }
 
 .home-title {
@@ -143,8 +148,14 @@ body {
 }
 
 .home-title > div {
-  width: 50px;
-  margin-right: 20px;
+  width: 25px;
+  margin-right: 15px;
+}
+
+@media (min-width: 400px) {
+  .home-title > div {
+    width: 50px;
+  }
 }
 
 .home-title > div > hr {
@@ -157,14 +168,49 @@ body {
 .home-title h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
+  letter-spacing: 1.5px;
 }
 
 .home h1 {
   font-size: 2.5rem;
   margin: auto;
-  padding-left: 70px;
+  padding-left: 40px;
   letter-spacing: 5.5px;
   font-weight: 600;
+}
+
+@media (min-width: 400px) {
+  .home h1 {
+    padding-left: 65px;
+  }
+}
+
+@media (min-width: 530px) {
+  .home h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.home-intro {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (min-width: 400px) {
+  .home-intro {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+.home-intro > p > strong {
+  color: #cbbc9c;
+}
+
+.home-intro > p > i {
+  margin-right: 2px;
+  color: #cbbc9c;
+  line-height: 1;
 }
 
 .home-intro p {
@@ -179,33 +225,26 @@ body {
 
 .home-intro p:nth-child(1) {
   margin-top: 50px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .home-intro p:nth-child(2) {
   margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.home-intro {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-.home-intro > p > strong {
-  color: #cbbc9c;
-}
-
-.home-intro > p > i {
-  margin-right: 2px;
-  color: #cbbc9c;
+  margin-bottom: 35px;
 }
 
 .resume-btn {
+  width: 100%;
   border-radius: 0;
-  padding: 8px 35px;
+  /* padding: 8px 35px; */
   border: none;
   background-color: #cbbc9c;
+}
+
+@media (min-width: 400px) {
+  .resume-btn {
+    width: auto;
+  }
 }
 
 .resume-btn:hover {
@@ -220,17 +259,41 @@ body {
   letter-spacing: 1px;
 }
 
+.resume-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 35px;
+}
+
+.resume-btn i {
+  line-height: 1;
+  margin-left: 5px;
+}
+
 /* ////////////////////////////////////// Skills ////////////////////////////////////// */
+
+.skills-frame {
+  padding-bottom: 50px;
+}
 
 .skills-inner {
   max-width: 850px;
   margin: auto;
-  display: flex;
-  /* height: 50px; */
+}
+
+@media (min-width: 630px) {
+  .skills-inner {
+    display: flex;
+  }
 }
 
 .skills-inner .skills-col:nth-child(1) {
   background-color: #3b3d3d;
+}
+
+.skills-inner .skills-col:hover {
+  opacity: 0.9;
 }
 
 .skills-inner .skills-col:nth-child(2),
@@ -241,34 +304,123 @@ body {
 }
 
 .skills-col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
   font-size: 0.9rem;
-  max-width: 283.3px;
-  padding: 10px;
-  /* background-color: #3b3d3d; */
+  min-height: 168px;
+  padding: 30px 25px;
   color: white;
-  /* margin: auto; */
   font-family: "Niramit ExtraLight Regular", Helvetica, Segoe UI, Roboto, Arial,
     Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Symbol, Noto Color Emoji,
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
 }
 
+@media (min-width: 336px) {
+  .skills-col {
+    min-height: 147px;
+  }
+}
+
+@media (min-width: 400px) {
+  .skills-col {
+    padding: 30px 45px;
+  }
+}
+
+@media (min-width: 470px) {
+  .skills-col {
+    min-height: 125px;
+  }
+}
+
+@media (min-width: 630px) {
+  .skills-col {
+    padding: 13px;
+    min-height: 107px;
+  }
+}
+
 .col-frame {
   display: flex;
+  position: relative;
   height: 100%;
 }
 
-.col-frame i {
-  color: #cbbc9c;
+.col-frame .col-icon {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.col-frame .fa-solid {
+.col-icon .fa-solid {
   margin: auto;
   padding-right: 15px;
   line-height: 1;
+  color: #cbbc9c;
 }
 
-.col-frame p {
+.col-right {
+  position: relative;
+  display: flex;
+}
+
+.skills-list {
+  display: flex;
+}
+
+.skills-list ul {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  margin: auto;
+  opacity: 0;
+}
+
+.skills-list li {
+  margin-right: 14px;
+  margin-bottom: 5px;
+}
+
+.col-p {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  transition: 0.6s;
+}
+
+.col-p p {
   margin-bottom: 0;
+  /* position: absolute; */
+  /* transition: 0.6s; */
+}
+
+/* .col-p p:nth-child(1) {
+  opacity: 0;
+} */
+
+/* .col-p p:nth-child(2) {
+  transition: 0.6s;
+  position: relative;
+} */
+
+.skills-col:hover {
+  .skills-list ul {
+    position: relative;
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .col-p {
+    position: absolute;
+    transition: 0s;
+    opacity: 0;
+    top: 0;
+    /* display: none; */
+  }
 }
 
 /* ////////////////////////////////////// Projects ////////////////////////////////////// */
@@ -292,11 +444,16 @@ body {
 }
 
 .pro-container {
-  display: flex;
   position: relative;
   margin-top: 6rem;
   margin-bottom: 6rem;
   border-left: 3px solid #787d7d;
+}
+
+@media (min-width: 580px) {
+  .pro-container {
+    display: flex;
+  }
 }
 
 .pro-inner-frame .pro-container:nth-child(3) {
@@ -308,10 +465,24 @@ body {
 }
 
 .pic-frame {
-  width: 50%;
-  max-height: 250px;
+  max-height: 310px;
   overflow: hidden;
-  padding-left: 20px;
+  margin-bottom: 30px;
+  /* padding-left: 5px; */
+}
+
+@media (min-width: 580px) {
+  .pic-frame {
+    width: 50%;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  .pic-frame {
+    max-height: 275px;
+  }
 }
 
 .pic-frame > img {
@@ -328,24 +499,60 @@ body {
 .pro-name {
   display: flex;
   color: #3b3d3ddb;
+  margin-bottom: 25px;
 }
 
 .pro-name > div {
-  width: 240px;
+  margin-right: 10px;
+}
+
+.pro-name a {
+  display: flex;
+  text-decoration: none;
 }
 
 .pro-name .fa-brands {
   font-weight: 600;
   color: #cbbc9c;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   line-height: 1;
+  margin: auto;
 }
 
 .pro-details {
-  width: 50%;
+  position: relative;
+  min-height: 335px;
   box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 15px;
+  /* padding-left: 15px; */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media (min-width: 283px) {
+  .pro-details {
+    min-height: 315px;
+  }
+}
+
+@media (min-width: 294px) {
+  .pro-details {
+    min-height: 285px;
+  }
+}
+
+@media (min-width: 420px) {
+  .pro-details {
+    min-height: 240px;
+  }
+}
+
+@media (min-width: 580px) {
+  .pro-details {
+    /* min-height: 0; */
+    /* max-height: 250px; */
+    width: 50%;
+    margin-left: 30px;
+  }
 }
 
 .pro-details h6 {
@@ -354,8 +561,20 @@ body {
 
 .pro-details h5 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   letter-spacing: 1.5px;
+}
+
+@media (min-width: 580px) {
+  .pro-details h5 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 630px) {
+  .pro-details h5 {
+    font-size: 1.5rem;
+  }
 }
 
 .pro-details p {
@@ -368,6 +587,7 @@ body {
 
 .techs {
   position: absolute;
+  min-height: 94px;
   bottom: 0;
 }
 
@@ -394,13 +614,55 @@ body {
 } */
 
 .carousel-item {
-  height: 355px;
+  height: 1055px;
+}
+
+@media (min-width: 335px) {
+  .carousel-item {
+    height: 755px;
+  }
+}
+
+@media (min-width: 400px) {
+  .carousel-item {
+    height: 600px;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel-item {
+    height: 505px;
+  }
+}
+
+@media (min-width: 600px) {
+  .carousel-item {
+    height: 430px;
+  }
+}
+
+@media (min-width: 682px) {
+  .carousel-item {
+    height: 410px;
+  }
+}
+
+@media (min-width: 762px) {
+  .carousel-item {
+    height: 390px;
+  }
+}
+
+@media (min-width: 846px) {
+  .carousel-item {
+    height: 355px;
+  }
 }
 
 .carousel-caption {
   color: #7e7a73;
   top: 0;
-  max-height: 316px;
+  /* max-height: 316px; */
   padding-bottom: 0px;
   overflow: hidden;
   padding-top: 0;
