@@ -274,7 +274,7 @@ body {
 /* ////////////////////////////////////// Skills ////////////////////////////////////// */
 
 .skills-frame {
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 
 .skills-inner {
@@ -290,6 +290,7 @@ body {
 
 .skills-inner .skills-col:nth-child(1) {
   background-color: #3b3d3d;
+  overflow: hidden;
 }
 
 .skills-inner .skills-col:hover {
@@ -356,14 +357,21 @@ body {
 
 .col-icon .fa-solid {
   margin: auto;
-  padding-right: 15px;
+  padding-right: 30px;
   line-height: 1;
   color: #cbbc9c;
+}
+
+@media (min-width: 630px) {
+  .col-icon .fa-solid {
+    padding-right: 15px;
+  }
 }
 
 .col-right {
   position: relative;
   display: flex;
+  overflow: hidden;
 }
 
 .skills-list {
